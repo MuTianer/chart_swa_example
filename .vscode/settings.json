@@ -1,0 +1,25 @@
+{
+  "editor.rulers": [
+    80
+  ],
+  "dart.previewFlutterUiGuides": true,
+  "dart.enableSdkFormatter": true,
+  "editor.stickyScroll.enabled": true,
+  "cSpell.words": [
+    "Cupertino",
+    "easyloading",
+    "fullscreen",
+    "ibank",
+    "passcode",
+    "Personetics",
+    "PKCS",
+    "pointycastle",
+    "sqflite",
+    "theo",
+    "unfocus",
+    "vsync"
+  ],
+  "commentTranslate.targetLanguage": "zh-CN",
+  "commentTranslate.multiLineMerge": true,
+  "commentTranslate.hover.enabled": true
+}

@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // {
+    //   "name": "flutter_training (demo)",
+    //   "request": "launch",
+    //   "type": "dart",
+    //   "flutterMode": "debug",
+    //   "program": "lib/demo/webview_example.dart"
+    // },
+    {
+      "name": "flutter_training (debug mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+    },
+    {
+      "name": "flutter_training (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_training (release mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ]
+}
