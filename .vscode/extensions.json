@@ -1,5 +1,27 @@
 {
-    "recommendations": [
-        "aaron-bond.better-comments",
-    ]
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "asciidoctor.asciidoctor-vscode",
+    "nash.awesome-flutter-snippets",
+    "streetsidesoftware.code-spell-checker",
+    "dart-code.dart-code",
+    "luanpotter.dart-import",
+    "rubymaniac.vscode-direnv",
+    "editorconfig.editorconfig",
+    "usernamehw.errorlens",
+    "saikou9901.evilinspector",
+    "dart-code.flutter",
+    "circlecodesolution.ccs-flutter-color",
+    "robert-brunhage.flutter-riverpod-snippets",
+    "marcelovelasquez.flutter-tree",
+    "blaxou.freezed",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "nhoizey.gremlins",
+    "oderwat.indent-rainbow",
+    "ionutvmi.path-autocomplete",
+    "wayou.vscode-todo-highlight",
+    "shardulm94.trailing-spaces",
+    "redhat.vscode-yaml"
+  ],
 }
