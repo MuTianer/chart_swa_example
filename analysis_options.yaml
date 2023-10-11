@@ -9,21 +9,59 @@
 # packages, and plugins designed to encourage good coding practices.
 include: package:flutter_lints/flutter.yaml
 
-linter:
-  # The lint rules applied to this project can be customized in the
-  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
-  # included above or to enable additional rules. A list of all available lints
-  # and their documentation is published at
-  # https://dart-lang.github.io/linter/lints/index.html.
-  #
-  # Instead of disabling a lint rule for the entire project in the
-  # section below, it can also be suppressed for a single line of code
-  # or a specific dart file by using the `// ignore: name_of_lint` and
-  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
-  # producing the lint.
-  rules:
-    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
-    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+analyzer:
+  exclude:
+    - lib/**/*.g.dart # freezed, riverpod, go_router generator
+    - lib/**/*.gen.dart # flutter_gen_code
+    - lib/**/*.freezed.dart # freezed
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
 
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+linter:
+  rules:
+    - always_declare_return_types: true
+    - always_put_control_body_on_new_line: true
+    - always_put_required_named_parameters_first: true
+    - always_specify_types: true
+    - annotate_overrides: true
+    # Usually, when @overrides is not present, this annotation is redeclaration.
+    - annotate_redeclares: false
+    - avoid_annotating_with_dynamic: true
+    - avoid_bool_literals_in_conditional_expressions: true
+    - avoid_catches_without_on_clauses: false
+    - avoid_catching_errors: true
+    - avoid_classes_with_only_static_members: true
+    - avoid_double_and_int_checks: true
+    - avoid_equals_and_hash_code_on_mutable_classes: true
+    # This is usually an inconsequential regulatory rule.
+    - avoid_escaping_inner_quotes: false
+    # Considering the possibility of compiling the project as a web project in the future.
+    - avoid_field_initializers_in_const_classes: false
+    - avoid_final_parameters: true
+    - avoid_function_literals_in_foreach_calls: true
+    - avoid_implementing_value_types: true
+    - avoid_init_to_null: true
+    - avoid_js_rounded_ints: true
+    - avoid_multiple_declarations_per_line: true
+    # Considering the presence of [Null] in the HTTP response,
+    # this rule is open to debate.
+    # The initial impression upon seeing this rule is to mark it as [false]
+    - avoid_null_checks_in_equality_operators: false
+    # For the sake of better code readability.
+    - avoid_positional_boolean_parameters: true
+    # A rule open to debate.
+    - avoid_private_typedef_functions: false
+    - avoid_redundant_argument_values: false
+    - avoid_renaming_method_parameters: false
+    - avoid_renaming_method_parameters: true
+    - avoid_returning_null_for_void: true
+    - avoid_returning_this: true
+    # For classes meant to be used by external systems,
+    # getters may not be necessary.
+    - avoid_setters_without_getters: false
+    # A rule open to debate.
+    - avoid_shadowing_type_parameters: false
+    - avoid_single_cascade_in_expression_statements: true
+    - avoid_types_on_closure_parameters: true
