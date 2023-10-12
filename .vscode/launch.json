@@ -2,22 +2,25 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "flutter_training (debug mode)",
+      "name": "DEV-Flavor",
       "request": "launch",
       "type": "dart",
       "flutterMode": "debug",
+      "program": "lib/main/main.dev.dart",
     },
     {
-      "name": "flutter_training (profile mode)",
+      "name": "STG-Flavor",
       "request": "launch",
       "type": "dart",
-      "flutterMode": "profile"
+      "flutterMode": "profile",
+      "program": "lib/main/main.stg.dart",
     },
     {
-      "name": "flutter_training (release mode)",
+      "name": "PROD-Flavor",
       "request": "launch",
       "type": "dart",
-      "flutterMode": "release"
+      "flutterMode": "release",
+      "program": "lib/main/main.prod.dart",
     }
   ]
 }

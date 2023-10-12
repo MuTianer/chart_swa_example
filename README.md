@@ -1,6 +1,6 @@
 # chart_swa_example
 
-  A chart_swa_example Flutter project.
+  A Flutter development framework intended for practice, so during the encapsulation process, will be more progressive, utilizing more innovative technologies and design patterns.
 
 # Plugin
 
@@ -66,10 +66,9 @@
 
   React to keyboard visibility changes.
 ## Env Management
-- [flutter_dotenv](https://pub.dev/packages/flutter_dotenv)
+- [flutter_flavor](https://pub.dev/packages/flutter_flavor)
 
-  Load configuration at runtime from a .env file which can be used throughout the application.
-
+  Flavors helps us to create builds for different instances of our app. For example, we can create a flavor for development, a flavor for production and another flavor for a demo of the app. In this way we can create different flavors, and thus have different instances of our apps before publishing it on the App Store and Google Play.
 
 ## Generate Tools
 - [build_runner](https://pub.dev/packages/build_runner)
@@ -77,10 +76,10 @@
   The build_runner package provides a concrete way of generating files using Dart code. Files are always generated directly on disk, and rebuilds are incremental - inspired by tools such as Bazel.
 
 
-## Getting Started
+# Getting Started
 
 1. set up the Flutter environment variables.
-2. get clone project
+2. git clone project
 3. In the project's root directory:
     * `CMD` run `flutter pub get`
 4. flutter_gen_runner
