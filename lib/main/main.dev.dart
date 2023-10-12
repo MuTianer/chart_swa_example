@@ -6,12 +6,12 @@ import 'my_app.dart';
 void main() {
   FlavorConfig(
     name: "dev",
-    color: CupertinoColors.black,
+    color: CupertinoColors.systemBlue,
     location: BannerLocation.topStart,
     variables: {
       "counter": 5,
       "baseUrl": "https://www.dev.com",
     },
   );
-  runApp(MyApp());
+  runApp(const MyApp());
 }

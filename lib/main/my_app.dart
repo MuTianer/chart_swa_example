@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     int counter = FlavorConfig.instance.variables["counter"] as int;
     String baseUrl = FlavorConfig.instance.variables["baseUrl"] as String;
     return FlavorBanner(
-      color: CupertinoColors.systemBlue,
+      // color: CupertinoColors.systemBlue,
       location: BannerLocation.topStart,
       child: CupertinoApp(
         title: 'Flutter Demo',

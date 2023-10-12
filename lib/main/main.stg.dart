@@ -6,12 +6,12 @@ import 'my_app.dart';
 void main() {
   FlavorConfig(
     name: "stg",
-    color: CupertinoColors.black,
-    location: BannerLocation.bottomStart,
+    color: CupertinoColors.systemOrange,
+    location: BannerLocation.topStart,
     variables: {
       "counter": 5,
       "baseUrl": "https://www.stg.com",
     },
   );
-  runApp(MyApp());
+  runApp(const MyApp());
 }

@@ -6,12 +6,12 @@ import 'my_app.dart';
 void main() {
   FlavorConfig(
     name: "prod",
-    color: CupertinoColors.black,
-    location: BannerLocation.bottomStart,
+    color: CupertinoColors.systemPink,
+    location: BannerLocation.topStart,
     variables: {
       "counter": 5,
       "baseUrl": "https://www.prod.com",
     },
   );
-  runApp(MyApp());
+  runApp(const MyApp());
 }

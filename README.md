@@ -75,10 +75,17 @@
 
   The build_runner package provides a concrete way of generating files using Dart code. Files are always generated directly on disk, and rebuilds are incremental - inspired by tools such as Bazel.
 
+- [change_app_package_name](https://pub.dev/packages/change_app_package_name)
 
+  Change App Package Name with single command. It makes the process very easy and fast.
+
+- [dart_define](https://pub.dev/packages/dart_define)
+
+  dart_define is an all-in-one tool to handle secrets and launch configurations both locally and in CI/CD pipelines super easily. Say goodbye to .env files or any other tedious and error-prone ways. With this package you can access your secrets in dart code as well as platform specific configurations.
 # Getting Started
 
-1. set up the Flutter environment variables.
+1. config the Flutter environment.
+    * [flutter start](https://docs.flutter.dev/get-started/install)
 2. git clone project
 3. In the project's root directory:
     * `CMD` run `flutter pub get`
@@ -90,3 +97,7 @@
     * `CMD` run `dart run build_runner watch -d`
     > build_runner watch can maintain a real-time generation state for freezed/riverpod/slang generators
 7. use `F5` run project
+
+8. If need to change the app name
+    * `CMD` run `flutter pub run change_app_package_name:main com.new.package.name`
+    > This might also be just an additional preparation step for the CI/CD.
