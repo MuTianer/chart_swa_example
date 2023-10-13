@@ -8,8 +8,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(TranslationProvider.of(context).flutterLocale);
-    print(AppLocaleUtils.supportedLocales);
     return CupertinoApp(
       title: 'Flutter Demo',
       locale: TranslationProvider.of(context).flutterLocale,

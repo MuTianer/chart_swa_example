@@ -101,3 +101,14 @@
 8. If need to change the app name
     * `CMD` run `flutter pub run change_app_package_name:main com.new.package.name`
     > This might also be just an additional preparation step for the CI/CD.
+
+# QA
+
+## CupertinoTheme Extension
+
+`CupertinoThemeData` cannot extend styles like `ThemeData` can. This creates a painful issue: if a project uses `CupertinoApp`, you cannot obtain the required custom styles using `CupertinoTheme.of(context)`.
+
+### github issues:
+
+* https://github.com/flutter/flutter/issues/116876
+* https://github.com/flutter/flutter/pull/133284
