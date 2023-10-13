@@ -6,21 +6,55 @@
       "request": "launch",
       "type": "dart",
       "flutterMode": "debug",
-      "program": "lib/main/main.dev.dart",
+      "program": "lib/main.dart",
+      "toolArgs": [
+        "--dart-define",
+        "Flavor=DEV"
+      ]
+    },
+    {
+      "name": "ITA-Flavor",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "program": "lib/main.dart",
+      "toolArgs": [
+        "--dart-define",
+        "Flavor=ITA"
+      ]
+    },
+    {
+      "name": "ITB-Flavor",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "program": "lib/main.dart",
+      "toolArgs": [
+        "--dart-define",
+        "Flavor=ITB"
+      ]
     },
     {
       "name": "STG-Flavor",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile",
-      "program": "lib/main/main.stg.dart",
+      "program": "lib/main.dart",
+      "toolArgs": [
+        "--dart-define",
+        "Flavor=STG"
+      ]
     },
     {
       "name": "PROD-Flavor",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release",
-      "program": "lib/main/main.prod.dart",
+      "program": "lib/main.dart",
+      "toolArgs": [
+        "--dart-define",
+        "Flavor=PROD"
+      ]
     }
   ]
 }
