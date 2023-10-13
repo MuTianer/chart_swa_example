@@ -1,0 +1,5 @@
+login:
+  # login page
+  buttonGoTutorial: tutorial
+  buttonGoLogin: Already have an account?
+  buttonGoLogout: logout

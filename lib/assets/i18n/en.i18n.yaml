@@ -1,0 +1,5 @@
+login:
+  # ログイン画面用語
+  buttonGoTutorial: はじめての方
+  buttonGoLogin: すでにアカウントをお持ちの方
+  buttonGoLogout: ログアウト
