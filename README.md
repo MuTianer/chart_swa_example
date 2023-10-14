@@ -45,12 +45,6 @@
 ## Loading
 - [flutter_easyloading](https://pub.dev/packages/flutter_easyloading)
 
-## Resource Management
-- [flutter_gen_runner](https://pub.dev/packages/flutter_gen_runner)
-
-  The Flutter code generator for your assets, fonts, colors, … — Get rid of all String-based APIs.
-  Inspired by SwiftGen.
-
 ## App icon generator
 - [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons)
 
@@ -82,6 +76,16 @@
 - [dart_define](https://pub.dev/packages/dart_define)
 
   dart_define is an all-in-one tool to handle secrets and launch configurations both locally and in CI/CD pipelines super easily. Say goodbye to .env files or any other tedious and error-prone ways. With this package you can access your secrets in dart code as well as platform specific configurations.
+
+- [flutter_gen_runner](https://pub.dev/packages/flutter_gen_runner)
+
+  The Flutter code generator for your assets, fonts, colors, … — Get rid of all String-based APIs.
+  Inspired by SwiftGen.
+
+- [svg_clean_tools](https://github.com/RazrFalcon/svgcleaner)
+
+  svgcleaner helps you clean up your SVG files, keeping them free from unnecessary data.
+
 # Getting Started
 
 1. config the Flutter environment.
@@ -100,7 +104,7 @@
 
 8. If need to change the app name
     * `CMD` run `flutter pub run change_app_package_name:main com.new.package.name`
-    > This might also be just an additional preparation step for the CI/CD.
+    > an additional preparation step for the CI/CD.
 
 # QA
 
