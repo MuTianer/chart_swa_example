@@ -1,4 +1,5 @@
 import 'package:chart_swa_example/core/environments/index.dart';
+import 'package:chart_swa_example/gen/assets.gen.dart';
 import 'package:flutter/cupertino.dart';
 
 import '../gen/i18n/translations.g.dart';
@@ -11,45 +12,13 @@ class Example extends StatelessWidget {
     final t = Translations.of(context);
     int counter = 0;
     String baseUrl = flavorConfig.apiBaseUrl;
-    return SafeArea(
-      child: CupertinoPageScaffold(
-        navigationBar: CupertinoNavigationBar(
-          middle: Text(t.login.button_go_login),
-        ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Count: $counter',
-                style: const TextStyle(
-                  color: CupertinoColors.black,
-                ),
-              ),
-              Text(
-                'BaseUrl: $baseUrl',
-                style: const TextStyle(
-                  color: CupertinoColors.black,
-                ),
-              ),
-              CupertinoButton(
-                child: Text('En'),
-                onPressed: () {
-                  // String storedLocale = loadFromStorage(); // your logic here
-                  LocaleSettings.setLocaleRaw('en');
-                },
-              ),
-              CupertinoButton(
-                child: Text('Ja'),
-                onPressed: () {
-                  // String storedLocale = loadFromStorage(); // your logic here
-                  LocaleSettings.setLocaleRaw('ja');
-                },
-              ),
-              CupertinoTextField(
-                textInputAction: TextInputAction.newline,
-              )
-            ],
+    return CupertinoPageScaffold(
+      child: Container(
+        decoration: BoxDecoration(
+          color: const Color(0XFF23303B),
+          image: DecorationImage(
+            image: Assets.images.loginCard.provider(),
+            fit: BoxFit.fitWidth,
           ),
         ),
       ),

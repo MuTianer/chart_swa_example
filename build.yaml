@@ -6,7 +6,7 @@ targets:
         options:
           base_locale: ja
           fallback_strategy: en
-          input_directory: lib/assets/i18n
+          input_directory: assets/i18n
           input_file_pattern: .i18n.yaml
           output_directory: lib/gen/i18n
           output_file_name: translations.g.dart
