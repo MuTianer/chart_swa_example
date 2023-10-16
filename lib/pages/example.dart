@@ -38,6 +38,16 @@ class Example extends StatelessWidget {
                   // String storedLocale = loadFromStorage(); // your logic here
                   LocaleSettings.setLocaleRaw('en');
                 },
+              ),
+              CupertinoButton(
+                child: Text('Ja'),
+                onPressed: () {
+                  // String storedLocale = loadFromStorage(); // your logic here
+                  LocaleSettings.setLocaleRaw('ja');
+                },
+              ),
+              CupertinoTextField(
+                textInputAction: TextInputAction.newline,
               )
             ],
           ),
