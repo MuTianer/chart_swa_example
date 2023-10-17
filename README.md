@@ -105,8 +105,10 @@
     * `CMD` run `dart run build_runner watch -d`
     > build_runner watch can maintain a real-time generation state for freezed/riverpod/slang generators
 7. vscode can use `F5` run project,
-also use command `flutter run --dart-define Flavor={environment}`,
-example `flutter run --dart-define Flavor=DEV`
+
+    also use command:
+      * `flutter run --dart-define Flavor={environment}`
+      * example: `flutter run --dart-define=Flavor=DEV`
 
 8. If need to change the app name
     * `CMD` run `flutter pub run change_app_package_name:main com.new.package.name`
