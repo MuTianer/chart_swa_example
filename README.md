@@ -98,7 +98,7 @@
 5. freezed/riverpod/slang generator
     * `CMD` run `flutter pub run build_runner build`
 
-    * slang&build runner QA: https://github.com/slang-i18n/slang/issues/90
+    * [slang&build runner issues](https://github.com/slang-i18n/slang/issues/90)
       * `CMD` run `dart run slang`
 
 6. build_runner watch

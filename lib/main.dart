@@ -5,7 +5,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'gen/i18n/translations.g.dart';
 import 'main/my_app.dart';
 
-/// This is the entry point for the Flutter program to start.
+/// The entry point for the Flutter program to start.
 /// Plugin initialization should be completed here.
 void main() {
   // Waiting for Flutter initialization to complete

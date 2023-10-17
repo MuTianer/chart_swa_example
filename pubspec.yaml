@@ -38,6 +38,9 @@ dependencies:
   adaptive_action_sheet: ^2.0.2
 
   flutter_flavor: ^3.1.1
+  transparent_image: ^2.0.1
+  simple_animations: ^5.0.2
+  flutter_hooks: ^0.20.3
 
 dev_dependencies:
   flutter_test:
@@ -73,3 +76,4 @@ flutter_gen:
   line_length: 80
   integrations:
     flutter_svg: true
+

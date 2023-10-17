@@ -1,40 +1,66 @@
-import 'package:chart_swa_example/core/environments/index.dart';
 import 'package:chart_swa_example/gen/assets.gen.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 import '../gen/i18n/translations.g.dart';
 
-class Example extends StatelessWidget {
+class Example extends HookConsumerWidget {
   const Example({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final controller = useAnimationController(
+      duration: const Duration(milliseconds: 1000),
+    );
+
+    controller.animateTo(1.0);
+
     final t = Translations.of(context);
-    int counter = 0;
-    String baseUrl = flavorConfig.apiBaseUrl;
     return CupertinoPageScaffold(
       child: SafeArea(
         child: Column(
           children: [
             Expanded(
               flex: 5,
-              child: Image.asset(Assets.images.loginCard.path),
+              child: FadeTransition(
+                opacity: CurvedAnimation(
+                  parent: controller,
+                  curve: Curves.easeIn,
+                ),
+                child: Image(
+                  image: Assets.images.loginCard.provider(),
+                ),
+              ),
             ),
-            Expanded(
-              flex: 2,
-              child: RichText(
-                text: TextSpan(
-                  text: t.welcome.description1,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 35,
-                    color: CupertinoColors.white,
-                    textBaseline: TextBaseline.ideographic
-                  ),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: FadeTransition(
+                opacity: CurvedAnimation(
+                  parent: controller,
+                  curve: Curves.easeIn,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TextSpan(
-                      text: t.welcome.description2,
+                    Text(
+                      t.welcome.description1,
                       style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 35,
+                        color: CupertinoColors.white,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      t.welcome.description2,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 35,
                         color: Color(0XFF456EFE),
                       ),
                     ),
@@ -43,7 +69,7 @@ class Example extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: Text('Swiper'),
+              child: Wrap(),
               flex: 1,
             ),
           ],

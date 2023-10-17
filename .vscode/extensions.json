@@ -21,6 +21,7 @@
     "ionutvmi.path-autocomplete",
     "wayou.vscode-todo-highlight",
     "shardulm94.trailing-spaces",
-    "redhat.vscode-yaml"
+    "redhat.vscode-yaml",
+    "gaetschwartz.build-runner"
   ],
 }
