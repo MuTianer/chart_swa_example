@@ -104,7 +104,7 @@
 6. build_runner watch
     * `CMD` run `dart run build_runner watch -d`
     > build_runner watch can maintain a real-time generation state for freezed/riverpod/slang generators
-7. vscode can use `F5` run project,
+7. vscode can use `vscode launcher` run project,
 
     also use command:
       * `flutter run --dart-define Flavor={environment}`
