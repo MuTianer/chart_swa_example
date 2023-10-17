@@ -3,3 +3,6 @@ login:
   buttonGoTutorial: はじめての方
   buttonGoLogin: すでにアカウントをお持ちの方
   buttonGoLogout: ログアウト
+welcome:
+  description1: Manage Your\r\nPayments with\r\n
+  description2: mobile banking

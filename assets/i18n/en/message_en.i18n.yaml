@@ -3,3 +3,6 @@ login:
   buttonGoTutorial: tutorial
   buttonGoLogin: Already have an account?
   buttonGoLogout: logout
+welcome:
+  description1: Manage Your\r\nPayments with\r\n
+  description2: mobile banking

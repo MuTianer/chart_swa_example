@@ -13,13 +13,40 @@ class Example extends StatelessWidget {
     int counter = 0;
     String baseUrl = flavorConfig.apiBaseUrl;
     return CupertinoPageScaffold(
-      child: Container(
-        decoration: BoxDecoration(
-          color: const Color(0XFF23303B),
-          image: DecorationImage(
-            image: Assets.images.loginCard.provider(),
-            fit: BoxFit.fitWidth,
-          ),
+      child: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              flex: 5,
+              child: Image.asset(Assets.images.loginCard.path),
+            ),
+            Expanded(
+              flex: 2,
+              child: RichText(
+                text: TextSpan(
+                  text: t.welcome.description1,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 35,
+                    color: CupertinoColors.white,
+                    textBaseline: TextBaseline.ideographic
+                  ),
+                  children: [
+                    TextSpan(
+                      text: t.welcome.description2,
+                      style: const TextStyle(
+                        color: Color(0XFF456EFE),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Expanded(
+              child: Text('Swiper'),
+              flex: 1,
+            ),
+          ],
         ),
       ),
     );
